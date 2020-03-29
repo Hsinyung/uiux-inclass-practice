@@ -1,0 +1,87 @@
+<html>
+  
+  <head>
+    
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      body{
+        margin: 5px;
+      }
+      .container{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .side{
+        flex: 30%;
+        background-color: black;
+        padding: 20px;
+      }
+      .text{
+        color: white;
+        text-align: center;
+      }
+      .main{
+        flex:70%;
+        background-color: black;
+        height: 400px;
+        padding:20px;
+        flex-direction: row;
+      }
+      .photo{
+        height: 250px;
+        width: 400px;
+        flex-direction: row;
+      }
+       @media screen and (max-width: 800px) {
+        .container, {   
+          flex-direction: column;
+        }
+      }    
+
+      
+    </style>
+  </head>
+  
+  <body>
+    
+    <div class = "container">
+      
+      <div class = "side">
+        <div class = "text">
+          <h1>Sidebar</h1>
+          <h3>Introduction</h3>
+          <h3>Album</h3>
+          <h3>Concert</h3>
+        </div>
+      </div>
+      
+      <div class = "main">
+        <div class = "text">
+          <h1>ONE OK ROCK</h1>
+          <img class = "photo" src = "./img/OOR01.jpg">
+          <h3>Paragraph</h3>
+        </div>
+      </div>
+      
+      <div class = "side">
+        <div class = "text">
+          <h1>Sidebar</h1>
+          <h3>Introduction</h3>
+          <h3>Album</h3>
+          <h3>Concert</h3>
+        </div>
+      </div>
+      
+      <div class = "main">
+        <div class = "text">
+          <h1>ONE OK ROCK</h1>
+          <img class = "photo" src = "./img/OOR01.jpg">
+          <h3>Paragraph</h3>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>
